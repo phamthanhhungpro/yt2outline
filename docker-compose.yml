@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  ytgenfast:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      OPENAI_API_KEY: "your_openai_api_key"
+    volumes:
+      - ./data:/app/data
